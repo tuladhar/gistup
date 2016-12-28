@@ -20,7 +20,7 @@ def parse_args():
   return parser.parse_args()
 
 def upload(token, filename, description, make_public):
-  description = description if description else "uploaded via gistup.py"
+  description = description if description else "uploaded via gistup.py (https://github.com/tuladhar/gistup)"
   content = open(filename, 'r').read()
   post =  json.dumps({
     "description": description,
