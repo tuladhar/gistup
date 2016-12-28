@@ -36,7 +36,7 @@ def upload(token, filename, description, make_public):
     req = urllib2.Request(url=api_url, data=post)
     req.add_header("Authorization", "token "+token)
     res = urllib2.urlopen(req)
-    url = json.loads(res.read())['url']
+    url = json.loads(res.read())['html_url']
     print url
   except Exception, upload_error:
     print upload_error
