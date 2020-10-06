@@ -1,4 +1,4 @@
-name: gistup: CI
+name: 'gistup: CI'
 
 on:
   push:
