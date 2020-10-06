@@ -8,7 +8,7 @@
 import os
 import sys
 import json
-import requests
+import urllib.request
 import argparse
 
 def parse_args():
@@ -31,12 +31,13 @@ def upload(token, filename, description, make_public):
       }
     }
   })
+  post = str(post).encode('utf-8')
   try:
     api_url = 'https://api.github.com/gists'
-    req = requests.post(url=api_url, headers={'Authorization': 'token '+token}, data=post)
-    req.raise_for_status()
-    url = req.json()['html_url']
-    print(url)
+    req = urllib.request.Request(url=api_url, headers={'Authorization': 'token '+token}, data=post)
+    res = urllib.request.urlopen(req)
+    url = json.loads(res.read())
+    print(url['html_url'])
   except Exception as upload_error:
     print(upload_error)
     sys.exit(1)
