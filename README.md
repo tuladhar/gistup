@@ -16,3 +16,9 @@ optional arguments:
                         account
   --public              toggle to make this gist available publicly
 ```
+
+
+## Demo usage
+![Demo of gistup](https://raw.githubusercontent.com/liisberg/gistup/master/demo.gif)
+
+
