@@ -19,6 +19,6 @@ optional arguments:
 
 
 ## Demo usage
-![Demo of gistup](https://raw.githubusercontent.com/liisberg/gistup/master/demo.gif)
+![Demo of gistup](https://raw.githubusercontent.com/tuladhar/gistup/master/demo.gif)
 
 
