@@ -1,5 +1,6 @@
 # gistup
 Simple CLI tool to upload file to GIST using Github API
+
 ```
 usage: gistup.py [-h] [-f FILENAME] [-d DESCRIPTION] [-t TOKEN] [--public]
 
@@ -15,3 +16,9 @@ optional arguments:
                         account
   --public              toggle to make this gist available publicly
 ```
+
+
+## Demo usage
+![Demo of gistup](demo.gif)
+
+
